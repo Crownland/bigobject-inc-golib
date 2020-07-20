@@ -11,10 +11,26 @@ type Configure struct {
 	Iris iris.Configuration `json:"iris"`
 }
 
+// HandleErrorParams web handle error params
+type HandleErrorParams struct {
+	Code           string
+	DisplayMessage string
+	HandleName     string
+	Message        string
+	StatusCode     int
+	Params         map[string]interface{}
+}
+
+// HandleErrorResponse web handle error response
+type HandleErrorResponse struct {
+	Code    string
+	Message string
+	Params  map[string]interface{}
+}
+
 // Paths Web paths
 type Paths struct {
 	Root        string
-	WebRoot     string
 	StaticPaths map[string]StaticPath
 }
 
