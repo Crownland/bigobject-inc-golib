@@ -58,7 +58,7 @@ type StaticPath struct {
 
 // Web Web service
 type Web interface {
-	CatchAPIError(ctx iris.Context, ctrlName string)
+	CatchHandleError(ctx iris.Context, handleName string)
 	GetIris() *iris.Application
 	GetPaths() Paths
 	GetStaticFileString(pathname, filename string) string
@@ -69,8 +69,7 @@ type Web interface {
 	StaticFileStringToFile(fileString string) (StaticFile, error)
 	StaticFileToString(file StaticFile) string
 	StaticFileToURL(file StaticFile) string
-	ThrowAPIError(statucCode int, message string)
-	ThrowAPIErrorf(statucCode int, format string, a ...interface{})
+	ThrowHandleError(statucCode int, params HandleErrorParams)
 	Start() error
 	Stop() error
 }
