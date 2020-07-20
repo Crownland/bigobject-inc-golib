@@ -23,9 +23,9 @@ type HandleErrorParams struct {
 
 // HandleErrorResponse web handle error response
 type HandleErrorResponse struct {
-	Code    string
-	Message string
-	Params  map[string]interface{}
+	Code    string                 `json:"code"`
+	Message string                 `json:"message"`
+	Params  map[string]interface{} `json:"params"`
 }
 
 // Paths Web paths
