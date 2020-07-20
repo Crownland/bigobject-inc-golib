@@ -13,4 +13,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add logger
 - Add miscellaneous
 
-[v1.0.0]: https://github.com/CloudChen2018/golib-definitions/archive/1.0.0.zip
+[v1.0.0]: https://github.com/CloudChen2018/golib-definitions/archive/v1.0.0.zip
