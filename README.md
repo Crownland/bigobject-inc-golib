@@ -1,4 +1,4 @@
-# GoLang Library
+# GoLang Library ver-1.0.0
 
 常用 golang 函式庫定義
 
