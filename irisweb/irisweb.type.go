@@ -4,11 +4,18 @@ import (
 	"github.com/kataras/iris/v12"
 )
 
-// Configure Web configure
+// Configure web configure
 type Configure struct {
 	Host string             `json:"host"`
 	Port int                `json:"port"`
 	Iris iris.Configuration `json:"iris"`
+}
+
+// ControllerInfo controller information
+type ControllerInfo struct {
+	ID          string
+	Name        string
+	Description string
 }
 
 // HandleErrorParams web handle error params
@@ -54,22 +61,4 @@ type StaticFile struct {
 type StaticPath struct {
 	Absolute string `json:"absolute"`
 	Relative string `json:"relative"`
-}
-
-// Web Web service
-type Web interface {
-	CatchHandleError(ctx iris.Context, handleName string)
-	GetIris() *iris.Application
-	GetPaths() Paths
-	GetStaticFileString(pathname, filename string) string
-	GetStaticPaths(name string) (StaticPath, error)
-	RemoveFileFromStaticFileString(fileString string) error
-	SetRoutes(routes []Route) error
-	SetStaticPaths(name string, path StaticPath, options iris.DirOptions) error
-	StaticFileStringToFile(fileString string) (StaticFile, error)
-	StaticFileToString(file StaticFile) string
-	StaticFileToURL(file StaticFile) string
-	ThrowHandleError(statucCode int, params HandleErrorParams)
-	Start() error
-	Stop() error
 }
