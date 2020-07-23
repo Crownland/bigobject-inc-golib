@@ -13,4 +13,5 @@ type GoLibrary interface {
 	NewLogger(loggerFile, loggerLevel string) (logger.Logger, logger.Defer, error)
 	NewRotationLogger(loggerFile, loggerLevel string) (logger.Logger, error)
 	NewWeb(l logger.Logger, conf irisweb.Configure, rootPath string) (irisweb.Web, error)
+	NewWebController(path, method, name, summary string) (irisweb.Controller, error)
 }
