@@ -36,10 +36,11 @@ type Paths struct {
 
 // Route Web route
 type Route struct {
-	Name   string
-	Path   string
-	Method string
-	Handle []iris.Handler
+	Handle  []iris.Handler
+	Method  string
+	Name    string
+	Path    string
+	Summary string
 }
 
 // StaticFile Web static file
