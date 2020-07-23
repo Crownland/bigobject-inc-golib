@@ -9,5 +9,5 @@ type Controller interface {
 	AddHandle(handle iris.Handler)
 	ClearHandle()
 	GetHandles() []iris.Handler
-	GetInfo() ControllerInfo
+	GetRoute() Route
 }

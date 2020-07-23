@@ -11,13 +11,6 @@ type Configure struct {
 	Iris iris.Configuration `json:"iris"`
 }
 
-// ControllerInfo controller information
-type ControllerInfo struct {
-	ID          string
-	Name        string
-	Description string
-}
-
 // HandleErrorParams web handle error params
 type HandleErrorParams struct {
 	Code           string
