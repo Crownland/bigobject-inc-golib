@@ -1,4 +1,4 @@
-module github.com/CloudChen2018/golib-definitions
+module github.com/bigobject-inc/golib
 
 go 1.13
 
