@@ -1,9 +1,9 @@
 package golib
 
 import (
-	"github.com/CloudChen2018/golib-definitions/irisweb"
-	"github.com/CloudChen2018/golib-definitions/logger"
-	"github.com/CloudChen2018/golib-definitions/miscellaneous"
+	"github.com/bigobject-inc/golib/irisweb"
+	"github.com/bigobject-inc/golib/logger"
+	"github.com/bigobject-inc/golib/miscellaneous"
 )
 
 // GoLibrary golang library service
