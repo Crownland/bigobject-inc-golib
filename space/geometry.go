@@ -1,6 +1,6 @@
 package space
 
-// GetServGeometry space geometry service
+// Geometry space geometry service
 type Geometry interface {
 	Encode(longitude float64, latitude float64, precision int) string
 	Decode(geohash string) BoundingBox

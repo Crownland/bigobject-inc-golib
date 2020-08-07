@@ -1,13 +1,13 @@
 package space
 
-//Geohash bounding box coordinates
+//BoundingBox Geohash bounding box coordinates
 type BoundingBox struct {
 	NE     Point
 	SW     Point
 	Center Point
 }
 
-//World coordinates
+// Point World coordinates
 type Point struct {
 	Longitude float64 //x
 	Latitude  float64 //y
