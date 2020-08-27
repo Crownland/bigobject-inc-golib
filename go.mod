@@ -1,4 +1,4 @@
-module github.com/bigobject-inc/golib
+module github.com/Crownland/bigobject-inc-golib
 
 go 1.13
 
